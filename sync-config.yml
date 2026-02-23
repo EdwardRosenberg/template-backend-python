@@ -1,0 +1,22 @@
+# sync-config.yml
+# Declares this template's parent in the hierarchy and the paths that
+# template-platform's sync workflow will propagate from the parent.
+
+parent: EdwardRosenberg/template-base
+tier: 1
+
+children:
+  - EdwardRosenberg/template-backend-python-fastapi
+
+sync_paths:
+  - .github/workflows/ci.yml
+  - .github/workflows/pr-title-lint.yml
+  - .github/workflows/agent-validation.yml
+  - .github/copilot-instructions.md
+  - .github/PULL_REQUEST_TEMPLATE.md
+  - .github/ISSUE_TEMPLATE/bug.yml
+  - .github/ISSUE_TEMPLATE/feature.yml
+  - .github/ISSUE_TEMPLATE/chore.yml
+  - .editorconfig
+  - .gitignore
+
